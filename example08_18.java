@@ -1,12 +1,9 @@
 import java.util.Scanner;
 public class example08_18 {
     //y=exp(b*log(a))
-    private static double pow(int a, int b) {
-        return Math.exp(b*Math.log(a));
-    }
 
     private static double hyp(int a, int b){
-        return Math.sqrt(pow(a, 2)+pow(b, 2));
+        return Math.sqrt(Math.exp(2*Math.log(a))+Math.exp(2*Math.log(b)));
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
